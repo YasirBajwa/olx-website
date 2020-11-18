@@ -1,0 +1,93 @@
+[debug] [2020-10-20T06:32:22.019Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:32:22.022Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\YASIR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-20T06:32:22.023Z] CLI Version:   8.12.1
+[debug] [2020-10-20T06:32:22.023Z] Platform:      win32
+[debug] [2020-10-20T06:32:22.024Z] Node Version:  v13.7.0
+[debug] [2020-10-20T06:32:22.025Z] Time:          Tue Oct 20 2020 11:32:22 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-10-20T06:32:22.026Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:32:22.026Z] 
+[debug] [2020-10-20T06:32:22.036Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-20T06:32:22.037Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Hybrid\React\olx-webapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-20T06:32:39.999Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-20T06:32:40.906Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 20 Oct 2020 06:32:40 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-20T06:35:10.580Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:35:10.584Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\YASIR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-20T06:35:10.585Z] CLI Version:   8.12.1
+[debug] [2020-10-20T06:35:10.585Z] Platform:      win32
+[debug] [2020-10-20T06:35:10.585Z] Node Version:  v13.7.0
+[debug] [2020-10-20T06:35:10.587Z] Time:          Tue Oct 20 2020 11:35:10 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-10-20T06:35:10.588Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:35:10.588Z] 
+[debug] [2020-10-20T06:35:10.598Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-20T06:35:10.599Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Hybrid\React\olx-webapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-20T06:35:19.901Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-20T06:35:20.833Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 20 Oct 2020 06:35:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-20T06:41:28.360Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:41:28.364Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\YASIR\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-20T06:41:28.365Z] CLI Version:   8.12.1
+[debug] [2020-10-20T06:41:28.365Z] Platform:      win32
+[debug] [2020-10-20T06:41:28.365Z] Node Version:  v13.7.0
+[debug] [2020-10-20T06:41:28.367Z] Time:          Tue Oct 20 2020 11:41:28 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-10-20T06:41:28.367Z] ----------------------------------------------------------------------
+[debug] [2020-10-20T06:41:28.367Z] 
+[debug] [2020-10-20T06:41:28.377Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-20T06:41:28.378Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  G:\Hybrid\React\olx-webapp
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-10-20T06:41:35.664Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-10-20T06:41:36.706Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 20 Oct 2020 06:41:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}

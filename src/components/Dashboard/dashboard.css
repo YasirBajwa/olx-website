@@ -1,0 +1,122 @@
+.header__wrapper{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(247,248,249);
+    /* display: flex; */
+}
+.header__wrapper__conetent{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+.header__wrapper__conetent > i{
+        margin-top: 30px;
+        font-size: 35px;
+        cursor: pointer;
+}
+.header__wrapper__conetent > h3{
+    margin-top: 28px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.form__section{
+    margin-top: 20px;
+}
+.card__conetnent__1 > input{
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+    
+}
+.card__conetnent__1 > input:focus{
+  border: 3px solid black;
+    
+}
+.card__conetnent__2 > input{
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+    
+}
+.card__conetnent__2 > input:focus{
+  border: 3px solid black;
+    
+}
+.card__conetnent__3 > input{
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+    
+}
+.card__conetnent__3 > input:focus{
+  border: 3px solid black;
+    
+}
+.card__conetnent__4 > input{
+    width: 60%;
+    height: 150px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+    
+}
+.card__conetnent__4 > input:focus{
+  border: 3px solid black;
+    
+}
+.card__conetnent__5 > input{
+    /* width: 60%; */
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+    
+}
+.card__conetnent__5 > input:focus{
+  border: 3px solid black;
+    
+}
+.card__content__7 > input{
+    width: 300px;
+    height: 43px;
+}
+.images__form > button{
+    width: 200px;
+}
+.card__content__7 > input{
+    width: 60%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+}
+.card__content__7 > input:focus{
+    border: 3px solid black;
+
+}
+.card__content__9 > input{
+    width: 30%;
+    height: 50px;
+    border-radius: 5px;
+    border-color:none;
+    outline: none;
+    border-top-color: lightgray;
+}
+.card__content__9 > input:focus{
+    border: 3px solid black;
+
+}

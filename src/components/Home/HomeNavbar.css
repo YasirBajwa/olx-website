@@ -1,0 +1,42 @@
+.header__location__input > input{
+    width: 300px;
+    height: 45px;
+    border: 3px solid black;
+    text-indent: 20px;
+}
+.header__product__search{
+    display: flex;
+}
+.header__product__search > input{
+    width: 500px;
+    height: 45px;
+    border: 3px solid black;
+    text-indent: 20px;
+    margin-left: 15px;
+    border-radius: 0 !important;
+}
+.header__product__search__btn{
+    width: 40px;
+    height: 44px;
+    background-color: black;
+}
+
+.header__product__search__btn {
+    color: white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    font-size: 25px;
+
+}
+.header__btns{
+    margin-left: 40px;
+    display: flex;
+}
+.header__sell__btn > button{
+    margin-left: 15px;
+}
+.header__user__detail{
+    display: flex;
+    
+}
