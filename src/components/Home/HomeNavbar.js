@@ -7,15 +7,13 @@ import { connect } from 'react-redux';
 import {facebook_login ,facebook_logout,user_form} from '../../store/action/action';
 
 class HomeNavbar extends React.Component {
- 
+  go_home = (history) =>{
+    history.push('/')
+  }
  
     render(){
       let check_user = this.props.check_user;
-      // let check_user = this.state.test_user;
-      // console.log('Test-user ==>',check_user);
-      //  console.log('Users==>',this.props);
-      // console.log('CheckUser==>',check_user);
-      //  console.log('User-History==>',this.props.history)
+
 
         return(
             <div>
@@ -54,7 +52,7 @@ class HomeNavbar extends React.Component {
 
          <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <a className="navbar-brand" href="#">
-            <img src={Logo} alt='olx-logo' width='80' />
+            <img src={Logo} alt='olx-logo'  onClick={() => this.go_home(this.props.history)} width='80' />
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />

@@ -156,7 +156,9 @@ send_sellerData = (e) => {
 });
  
 }  
-
+go_home = (history) =>{
+  history.push('/')
+}
   render() {
    
     let user = this.props.users;
@@ -165,7 +167,7 @@ send_sellerData = (e) => {
       <form onSubmit={(e) => this.send_sellerData(e)}>
         <div className='header__wrapper'>
           <div className='header__wrapper__conetent'>
-            <i className='fa fa-long-arrow-left'></i>
+            <i className='fa fa-long-arrow-left' style={{cursor:'pointer'}} onClick={() => this.go_home(this.props.history)}></i>
             <h3>OLX</h3>
           </div>
           <div className='form__section'>

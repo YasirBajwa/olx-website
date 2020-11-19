@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import HomeNavbar from './HomeNavbar';
+import FooterSection from '../Footer/Footer';
 import firebase from '../../config/firebase';
 import './Home.css'
 import { product_page } from '../../store/action/action';
@@ -86,6 +87,8 @@ user_data = (data) =>{
 
 
       </div>
+      
+       <FooterSection/> 
       </div>
     )
   }

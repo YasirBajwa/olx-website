@@ -1,24 +1,25 @@
 .header__location__input > input{
     width: 300px;
     height: 45px;
-    border: 3px solid black;
+    border: 2px solid black;
     text-indent: 20px;
 }
 .header__product__search{
     display: flex;
 }
 .header__product__search > input{
-    width: 500px;
+    width: 350px;
     height: 45px;
-    border: 3px solid black;
+    border: 2px solid black;
     text-indent: 20px;
     margin-left: 15px;
     border-radius: 0 !important;
 }
 .header__product__search__btn{
     width: 40px;
-    height: 44px;
+    height: 45px;
     background-color: black;
+    cursor: pointer;
 }
 
 .header__product__search__btn {
@@ -56,7 +57,7 @@
 }
 .user__card{
     width: 330px;
-    height: 260px;
+    height: 290px;
     border: 1px solid lightgray;
     border-radius: 5px;
    
@@ -106,7 +107,7 @@
     font-weight: bold;
 }
 .header__login__btn > button{
-    width: 110px;
+    width: 130px;
     height: 40px;
     border-radius: 25px;
     background-color: crimson;
@@ -114,7 +115,7 @@
     outline: none;
 }
 .header__sell__btn > button{
-    width: 110px;
+    width: 140px;
     height: 40px;
     border-radius: 25px;
     background-color: crimson;
