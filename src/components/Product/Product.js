@@ -5,6 +5,7 @@ import GoogleMap from '../../assets/images/Capture2.JPG';
 
 import './Product.css';
 import { connect } from 'react-redux';
+import FooterSection from '../Footer/Footer';
 
 class ProductDetail extends React.Component {
 
@@ -58,7 +59,27 @@ class ProductDetail extends React.Component {
             </div>
 
             <div className='product_right_box_2'>
-                
+                <div className='product__right__box__2__c1'>SELLER DISCRIPTION</div>
+                <div className='product__right__box__2__c2'>
+                    <div>
+                        Seller Image
+                    </div>
+
+                    <div>
+                        Arrow
+                    </div>
+
+                </div>
+                <div className='product__right__box__2__c3'>
+                    <button>Chat with Seller</button>
+                </div>
+
+                <div className='product__right__box__2__c4'>
+                    <i className='fa fa-phone'></i>
+                    <div>*********</div>
+                    <p>Show Number</p>
+                </div>
+            
             </div>
             <div className='product_right_box_3'>
                 <h3>Posted In</h3>
@@ -79,8 +100,10 @@ class ProductDetail extends React.Component {
 
 
         </div>
+        <FooterSection/>
 
         </div>
+
     );
   }
 }
