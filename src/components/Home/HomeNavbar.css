@@ -106,7 +106,7 @@
     font-weight: bold;
 }
 .header__login__btn > button{
-    width: 150px;
+    width: 110px;
     height: 40px;
     border-radius: 25px;
     background-color: crimson;
@@ -114,7 +114,7 @@
     outline: none;
 }
 .header__sell__btn > button{
-    width: 150px;
+    width: 110px;
     height: 40px;
     border-radius: 25px;
     background-color: crimson;
@@ -122,7 +122,7 @@
     outline: none;
 }
 .header__logout__btn > button{
-    width: 150px;
+    width: 110px;
     height: 40px;
     border-radius: 25px;
     background-color: crimson;
