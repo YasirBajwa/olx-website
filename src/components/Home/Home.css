@@ -1,0 +1,19 @@
+
+.olx__banner{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.olx__banner > img{
+    width: 95%;
+    height: 300px;
+    
+}
+.olx__list__headings{
+    max-width: 71%;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: rgb(0,47,52);
+    font-weight: bold;
+}

@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import HomeNavbar from './HomeNavbar';
 import firebase from '../../config/firebase';
-import TestApp from './Test';
+import './Home.css'
+import { product_page } from '../../store/action/action';
+import OlxBanner from '../../assets/images/OLX-banner.jpg'
 
 
 
@@ -11,12 +13,11 @@ class Home extends React.Component{
   constructor(){
     super();
     this.state={
-      firebaseData:[]
+      firebaseData:[],
+      get_data : []
     }
   }
-// seller_data = {};
   componentDidMount(){
-  
       const arr = []
     firebase.database().ref('/').child(`users/sellerData`).on('child_added', (data)=>{
       arr.push(data.val())
@@ -25,38 +26,66 @@ class Home extends React.Component{
       })
     })
   }
-  //  seller_data = {
+user_data = (data) =>{
+  console.log('userData==>',data);
 
-    // 123636126: { name: "blah", email: "blah" },
-    // 231273812837: { name: "blah2", email: "blah2" },
-    // 23718237127: { name: "blah3", email: "blah3" },
-    // 237182371327: null,
-    // 376673246234: undefined
-  // };
-
-
+}
   render(){
     let seller_data = this.state.firebaseData[0] ;
-    console.log('state_data=>',seller_data)
-
+    // console.log('getData==>',this.state.firebaseData[0])
+    // console.log('state cc==>',this.state.get_data)
     return(
       <div>
         <HomeNavbar/>
-        <div>
-        {seller_data &&  Object.keys(seller_data).map((data, index) => (
-        <div key={index}>
-          <div>Firebase Data</div>
-          {seller_data[data] &&
-            Object.keys(seller_data[data]).map((val,i) => (
-              <div key={i}>
-                {seller_data[data][val]}
-                {/* <img src={seller_data[data].add_photo} alt='' width='100'/> */}
-                </div>
-            ))}
+
+        <div className='olx__banner'>
+           <img src={OlxBanner} alt=''/>
         </div>
-      ))}
+        <div className='olx__list__headings'>
+        <h2>Fresh recommendations</h2> 
 
         </div>
+        <div  className='cards__list'>
+          {seller_data && Object.values(seller_data).map( (data,index) =>{
+                     return <div className='user__card'
+                                 key={index}
+                                 onClick={() => this.props.product_page(data,this.props.history)}
+                            >
+                        <div className='user__card__content__1'>
+                         <div className='content__1__3'>
+                              Featured
+                         </div>
+                          <div className='content__1__1'>
+                                {<img src={data.add_photo[0]} width='200px' height='120px' alt=''/>}
+                            </div> 
+
+                            <div className='content__1__2'>
+                              <i className='fa fa-heart-o'></i>
+                            </div>
+                         
+                         
+                          </div> 
+
+                           <div className='user__card__content__2'>
+                                   Rs {data.set_price}
+
+                             </div>
+                             <div className='user__card__content__3'>
+                                   {data.add_title}
+
+                             </div>
+                             
+                               <div className='user__card__content__4'>
+                                        {data.set_location}
+
+                             </div>
+                       </div>
+          }
+          
+          )}
+
+
+      </div>
       </div>
     )
   }
@@ -70,7 +99,7 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = (dispatch) =>{
   return {
-
+    product_page: (data,history) => dispatch(product_page(data,history)) 
   }
 }
 

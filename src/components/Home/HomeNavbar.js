@@ -80,7 +80,7 @@ class HomeNavbar extends React.Component {
              <div className='header__user__detail'>
              
              <div className='header__user__profile'>
-              <p>Welcome:{this.props.users.name}</p>
+              <p>Welcome <br/><b>{this.props.users.name}</b></p>
                </div>   
              <div className='header__logout__btn'>
             <button onClick={ () => this.props.facebook_logout()} className='btn btn-dark' data-toggle="modal" data-target="#exampleModal">Logout</button>
@@ -90,7 +90,7 @@ class HomeNavbar extends React.Component {
               :
            
             <div className='header__login__btn'>
-            <button className='btn btn-dark' data-toggle="modal" data-target="#exampleModal">Login</button>
+            <button className='btn btn-info' data-toggle="modal" data-target="#exampleModal">Login</button>
           </div>
               
               }

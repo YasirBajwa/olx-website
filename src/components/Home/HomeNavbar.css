@@ -40,3 +40,92 @@
     display: flex;
     
 }
+
+/* ----user-card--------------- */
+.cards__list{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* margin-left: 30px; */
+
+}
+.user__card{
+    width: 330px;
+    height: 260px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+   
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.user__card__content__1{
+    /* max-width: 90%; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.content__1__2 > i{
+    font-size: 21px;
+    color: rgb(0,47,52);
+    font-weight: bold;
+}
+.user__card__content__2{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.user__card__content__3{
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: rgba(0,47,52,.64);;
+}
+.user__card__content__4{
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: rgba(0,47,52,.64);
+    margin-top: 30px;
+}
+.content__1__3{
+    width: 80px;
+    height: 25px;
+    border: 1px solid rgb(255,206,50);
+    background-color: rgb(255,206,50);
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+}
+.header__login__btn > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: crimson;
+    border: rgb(29,139,204);   
+    outline: none;
+}
+.header__sell__btn > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: crimson;
+    border: rgb(29,139,204); 
+    outline: none;
+}
+.header__logout__btn > button{
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    background-color: crimson;
+    border: rgb(29,139,204); 
+    outline: none;
+}

@@ -1,13 +1,23 @@
+// import { act } from "react-dom/test-utils";
+import React from 'react';
 
 
 let INITIAL_STATE = {
   users: [] ,
-  check_user : false
+  check_user : false,
+  product_data : []
 }
 
 
 const reducer = (state = INITIAL_STATE,action) => {
         switch(action.type){
+
+          case 'PRODUCT_PAGE' : 
+          return {
+                  ...state,
+                  product_data : action.payload
+          } 
+
           case  'FACEBOOK_USER':
             return {
               ...state,
@@ -24,7 +34,8 @@ const reducer = (state = INITIAL_STATE,action) => {
             case 'USER_FORM_PAGE':
               return {
                 ...state
-              }  
+              } 
+           
         }       
   
 

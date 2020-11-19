@@ -64,13 +64,20 @@ const get_users = (dispatch) => {
 
     }
 }
-
+const product_page = (data,history) =>{
+    return(dispatch) =>{
+        dispatch({type:'PRODUCT_PAGE',payload: data});
+        history.push('/product');
+        console.log('productDispatch==>',data)
+    }
+}
 export {
     
      facebook_login,
      get_users,
      facebook_logout,
      user_form,
+     product_page,
     };
 
   
