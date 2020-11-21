@@ -36,7 +36,7 @@ class FooterSection extends React.Component {
 
         <div className='footer__section__2'>
           <div className='footer__section__2__c1'>
-            <table className='table table-borderless'>
+            <table className='table  table-borderless'>
               <thead>
                 <tr>
                   <th scope='col'>POPULAR CATEGORIES</th>

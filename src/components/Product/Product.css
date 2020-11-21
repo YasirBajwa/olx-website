@@ -29,9 +29,8 @@
 }
 .product__detail {
     display: flex;
-    /* max-width: 90%; */
-    /* margin: 0 auto; */
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .product_right_box_1{
     width: 400px ;

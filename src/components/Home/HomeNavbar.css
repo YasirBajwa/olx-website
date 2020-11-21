@@ -1,47 +1,204 @@
-.header__location__input > input{
-    width: 300px;
-    height: 45px;
-    border: 2px solid black;
-    text-indent: 20px;
-}
-.header__product__search{
-    display: flex;
-}
-.header__product__search > input{
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+.header__location__input {
     width: 350px;
     height: 45px;
-    border: 2px solid black;
-    text-indent: 20px;
-    margin-left: 15px;
-    border-radius: 0 !important;
+    border: 2.5px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
 }
-.header__product__search__btn{
-    width: 40px;
-    height: 45px;
-    background-color: black;
+.header__location__input__1 > i{
+    font-size: 30px;
+}
+.header__location__input__3 > i{
+    font-size: 40px;
     cursor: pointer;
 }
-
-.header__product__search__btn {
-    color: white !important;
+.header__location__input__2 > input{
+    border: none;
+    outline: none;
+}
+.header__product__searching__wrapper{
     display: flex;
-    justify-content: center;
-    align-items: center !important;
-    font-size: 25px;
+}
 
+.header__product__searching{
+    width: 550px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2.5px solid black;
+    margin-left: 15px;
+    background-color: white;
+}
+.header__product__searching__{
+    width: 450px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2.5px solid black;
+    margin-left: 15px;
+    background-color: white;
+}
+.header__product__searching > input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.header__product__searching__ > input{
+    width: 80%;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+.header__product__searching__btn{
+    width: 50px;
+    height: 45px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 5px; */
+}
+.header__product__searching__btn > i{
+    color: white;
+    font-size: 22px;
 }
 .header__btns{
     margin-left: 40px;
     display: flex;
 }
-.header__sell__btn > button{
-    margin-left: 15px;
-}
+
 .header__user__detail{
     display: flex;
-    
 }
+.header__user__chat__opt > i{
+    font-size: 21px;
+    margin-top: 10px;
+    cursor: pointer;
 
+}
+.header__user__bell__opt > i{
+    font-size: 21px;
+    margin-left: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+.header__user__avtar__img{
+    margin-left: 15px;
+    cursor: pointer;
+}
+.user__profile__dropdown__  > i {
+    font-size: 35px;
+    margin-left: 15px;
+
+}
+.dropdown-menu-right{
+    width: 300px !important;
+    margin-top: 20px;
+    height: 500px;
+}
+.frame {
+    text-align: center;
+  }
+  
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+  
+  
+  
+  /* 3 */
+  .btn-3 {
+    background: rgb(0,172,238);
+  background: linear-gradient(0deg, rgba(0,172,238,1) 0%, rgba(2,126,251,1) 100%);
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    margin-left: 20px;
+    
+  }
+  .btn-3 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-3:before,
+  .btn-3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3:before {
+    height: 0%;
+    width: 2px;
+  }
+  .btn-3:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3:hover{
+     background: transparent;
+    box-shadow: none;
+  }
+  .btn-3:hover:before {
+    height: 100%;
+  }
+  .btn-3:hover:after {
+    width: 100%;
+  }
+  .btn-3 span:hover{
+     color: rgba(2,126,251,1);
+  }
+  .btn-3 span:before,
+  .btn-3 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgba(2,126,251,1);
+    transition: all 0.3s ease;
+  }
+  .btn-3 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-3 span:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-3 span:hover:before {
+    height: 100%;
+  }
+  .btn-3 span:hover:after {
+    width: 100%;
+  }
+  
 /* ----user-card--------------- */
 .cards__list{
     max-width: 80%;
@@ -106,22 +263,25 @@
     font-size: 13px;
     font-weight: bold;
 }
-.header__login__btn > button{
-    width: 130px;
-    height: 40px;
-    border-radius: 25px;
-    background-color: crimson;
-    border: rgb(29,139,204);   
-    outline: none;
+.header__login__div {
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: underline;
+  color: rgb(0,47,52);
+  font-weight: 500;
+  margin-top: 5px;
 }
-.header__sell__btn > button{
-    width: 140px;
-    height: 40px;
-    border-radius: 25px;
-    background-color: crimson;
-    border: rgb(29,139,204); 
-    outline: none;
-}
+
+.header__logout__div {
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: underline;
+    color: rgb(0,47,52);
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
 .header__logout__btn > button{
     width: 110px;
     height: 40px;

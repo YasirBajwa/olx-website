@@ -5,6 +5,7 @@ import './HomeNavbar.css';
 import './modal.css';
 import { connect } from 'react-redux';
 import {facebook_login ,facebook_logout,user_form} from '../../store/action/action';
+import AvtarImage from '../../assets/images/avtar.png'
 
 class HomeNavbar extends React.Component {
   go_home = (history) =>{
@@ -54,53 +55,95 @@ class HomeNavbar extends React.Component {
         <a className="navbar-brand" href="#">
             <img src={Logo} alt='olx-logo'  onClick={() => this.go_home(this.props.history)} width='80' />
         </a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <div className='header__location__input'>
-                    <input type='text' placeholder="&#xF002;     Search" style={{fontFamily:'Arial, FontAwesome'}}/>
+                   <div className='header__location__input__1'>
+                          <i className='fa fa-search'></i>
+                   </div>
+                   <div className='header__location__input__2'>
+                   <input type='text'placeholder='Search City,area or town'  />
+
+                  </div>
+                      <div className='header__location__input__3'>
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </div>
             </div>
 
-            <div className='header__product__search'>
-            <input type='text' placeholder='Find Cars,Mobile Phones and more...' />
-            <div className='header__product__search__btn' >
-              <i className='fa fa-search' ></i>
+            <div className='header__product__searching__wrapper'>
+                      <div className={!check_user ? 'header__product__searching' : 'header__product__searching__'}>
+                      <input type='text' placeholder='Find Cars,Mobile phones and more...' />
+                      </div>
+                      <div className='header__product__searching__btn'>
+                        <i className='fa fa-search'></i>
 
+                      </div>
             </div>
-          
-            </div>
+
             <div className='header__btns'>
-              {  check_user  ?
+              {/* {  check_user  ? */}
              
 
              <div className='header__user__detail'>
-             
-             <div className='header__user__profile'>
-              <p>Welcome <br/><b>{this.props.users.name}</b></p>
-               </div>   
-             <div className='header__logout__btn'>
-            <button onClick={ () => this.props.facebook_logout()} className='btn btn-dark' data-toggle="modal" data-target="#exampleModal">Logout</button>
+             <div className='header__user__chat__opt'>
+               <i className='fa fa-comment-o'></i>
+             </div>
+             <div className='header__user__bell__opt'>
+             <i class="fa fa-bell-o" aria-hidden="true"></i>
              </div>
 
+             <div className='header__user__avtar__img'>
+               <img src={AvtarImage} width='40' alt='' />
+
              </div>
-              :
+
+             <div className='header__user__profile'>
+             <div class="dropdown show user__profile__dropdown__">
+             <i class="fa fa-angle-down " aria-hidden="true"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
            
-            <div className='header__login__btn'>
-            <button className='btn btn-info' data-toggle="modal" data-target="#exampleModal">Login</button>
-          </div>
+
+  <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuLink">
+    
+    {/* <p>Hello, <br/><b>{this.props.users.name}</b></p> */}
+
+    <div className='header__logout__div'>
+            <div onClick={ () => this.props.facebook_logout()} className='header__logout__div_' data-toggle="modal" data-target="#exampleModal"><span>Logout</span></div>
+             </div>
+  </div>
+
+
+</div>
               
-              }
+              
+              
+               </div>   
+            
+
+             </div>
+              
+             {/* : */}
+            {/* <div className='header__login__div'>
+            <div className='header__login__div_' data-toggle="modal" data-target="#exampleModal">Login</div>
+            <div>
+              
+              </div> 
+
+          
+          </div> */}
+              
+              {/* } */}
               { !check_user  ?
-                <div className='header__sell__btn'>
-                <button className='btn btn-info' data-toggle="modal" data-target="#exampleModal">SELL</button>
+                <div className='frame'>
+                <button className='custom-btn btn-3' data-toggle="modal" data-target="#exampleModal"><span>SELL</span></button>
               </div>
                
                
               :
-              <div className='header__sell__btn'>
-              <button className='btn btn-info' onClick ={ () => this.props.user_form(this.props.history) }>SELL Product</button>
+              <div className='frame'>
+              <button className='custom-btn btn-3' onClick ={ () => this.props.user_form(this.props.history) }><span>SELL Product</span></button>
             </div>
              
 
