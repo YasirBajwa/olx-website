@@ -84,7 +84,7 @@ class HomeNavbar extends React.Component {
             </div>
 
             <div className='header__btns'>
-              {/* {  check_user  ? */}
+              {  check_user  ?
              
 
              <div className='header__user__detail'>
@@ -105,17 +105,74 @@ class HomeNavbar extends React.Component {
              <i class="fa fa-angle-down " aria-hidden="true"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
            
 
-  <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuLink">
-    
-    {/* <p>Hello, <br/><b>{this.props.users.name}</b></p> */}
+             <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenuLink">
+                  
+                  <div className='drop__menue__content__1'>
+                     <div className='drop__menue__content__1__1'>
+                       <img src={AvtarImage} alt='' width='60' />
 
-    <div className='header__logout__div'>
+                     </div>
+                     <div className='drop__menue__content__1__2'>
+                       Hello, <br/>
+                       <h5> Test User{this.props.users.name}</h5>
+                       <p>Vist and edit Profile</p>
+
+                     </div>
+
+                  </div>
+                  <div className='drop__menue__content__2'>
+                    <h5>2 Steps Left</h5>
+                    <div className='steps__bars'>
+                    <div className='steps__bars__1'></div>
+                    <div className='steps__bars__2'></div>
+                    <div className='steps__bars__3'></div>
+                    <div className='steps__bars__4'></div>
+                    <div className='steps__bars__5'></div>
+
+
+                    </div>
+                  </div>
+                  <div className='drop__menue__content__2__'>
+                    OLX is built on trus.Help other people get <br/> to know you.
+                      Tell them about the things you like
+                    
+
+                  </div>
+                  <div className='drop__menue__content__3'>
+                        <i className='fa fa-address-card-o'></i>
+                        <div>My Ads</div>
+                  </div>
+                  <div className='drop__menue__content__3'>
+                  <i class="fa fa-building" aria-hidden="true"></i>
+                        <div>Buy Business Packages</div>
+                  </div>
+                  <div className='drop__menue__content__3'>
+                  <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                        <div>Bought Business & Billings</div>
+                  </div>
+                  <div className='drop__menue__content__3'>
+                  <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+                  <div>Help</div>
+                  </div>
+                  <div className='drop__menue__content__3'>
+                  <i class="fa fa-sliders" aria-hidden="true"></i>
+                          <div>Settings</div>
+                  </div>
+                  <div className='drop__menue__content__3'>
+                  <i class="fa fa-caret-square-o-left" aria-hidden="true"></i>
+                        <div onClick={ () => this.props.facebook_logout()} className='header__logout__div_' data-toggle="modal" data-target="#exampleModal">Logout</div>
+                  </div>
+
+                
+                {/* <p>Hello, <br/><b>{this.props.users.name}</b></p> */}
+
+               {/* <div className='header__logout__div'>
             <div onClick={ () => this.props.facebook_logout()} className='header__logout__div_' data-toggle="modal" data-target="#exampleModal"><span>Logout</span></div>
-             </div>
-  </div>
+             </div> */}
+               </div>
 
 
-</div>
+                </div>
               
               
               
@@ -123,16 +180,17 @@ class HomeNavbar extends React.Component {
             
 
              </div>
-              
-             {/* : */}
-            {/* <div className='header__login__div'>
+              :
+            //  {/* : */}
+             <div className='header__login__div'>
             <div className='header__login__div_' data-toggle="modal" data-target="#exampleModal">Login</div>
             <div>
               
               </div> 
 
           
-          </div> */}
+          </div> 
+    }
               
               {/* } */}
               { !check_user  ?

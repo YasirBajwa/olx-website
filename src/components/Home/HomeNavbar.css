@@ -99,8 +99,98 @@
 .dropdown-menu-right{
     width: 300px !important;
     margin-top: 20px;
-    height: 500px;
+    height: 550px;
 }
+
+.drop__menue__content__1{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+.drop__menue__content__1__2{
+    margin-left: 25px;
+}
+
+.drop__menue__content__1__2 > p{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.drop__menue__content__2 > h5{
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.drop__menue__content__2__ {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 12px;
+    margin-top: 5px;
+    color: rgb(135,157,159);
+}
+
+.steps__bars{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+.steps__bars__1{
+    width: 40px;
+    height: 8.5px;
+    background-color: rgb(255,206,50);
+}
+.steps__bars__2{
+    width: 40px;
+    height: 8.5px;
+    background-color: rgb(255,206,50);
+}.steps__bars__3{
+    width: 40px;
+    height: 8.5px;
+    background-color: rgb(255,206,50);
+}.steps__bars__4{
+    width: 40px;
+    height: 8.5px;
+    background-color: rgb(204,213,214);
+}.steps__bars__5{
+    width: 40px;
+    height: 8.5px;
+    background-color: rgb(204,213,214);
+    
+}
+.drop__menue__content__3 > i{
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.drop__menue__content__3 > div{
+    margin-left: 25px;
+    cursor: pointer;
+}
+.drop__menue__content__3{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .frame {
     text-align: center;
   }
