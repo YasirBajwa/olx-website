@@ -67,6 +67,35 @@
 }
 }
 
-@media(max-width:940px){
+@media(max-width:490px){
+.footer__section__2{
+    display: none;
+}
+.footer__section__content__1 > img{
+    width: 80%;
+    
+}
+.footer__section{
+    height: 160px;
+ 
+}
+}
+
+@media(max-width:733px){
+    .footer__section__3{
+      
+        height: 60px;
+    }
+    .footer__section__c1__1,.footer__section__c1__2{
+        font-size: 11px;
+        width: 100%;
+    }
+}
+
+@media(max-width:320px){
+    .footer__section__3{
+      
+        height: 70px;
+    }
 
 }

@@ -55,12 +55,12 @@ class HomeNavbar extends React.Component {
         <a className="navbar-brand" href="#">
             <img src={Logo} alt='olx-logo'  onClick={() => this.go_home(this.props.history)} width='80' />
         </a>
-        {/* <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
-        </button> */}
+        </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <div className='header__location__input'>
+            <div className={!check_user ? 'header__location__input' : 'header__location__input__after'}>
                    <div className='header__location__input__1'>
                           <i className='fa fa-search'></i>
                    </div>
@@ -114,7 +114,7 @@ class HomeNavbar extends React.Component {
                      </div>
                      <div className='drop__menue__content__1__2'>
                        Hello, <br/>
-                       <h5> Test User{this.props.users.name}</h5>
+                       <h5>{this.props.users.name}</h5>
                        <p>Vist and edit Profile</p>
 
                      </div>
@@ -201,7 +201,7 @@ class HomeNavbar extends React.Component {
                
               :
               <div className='frame'>
-              <button className='custom-btn btn-3' onClick ={ () => this.props.user_form(this.props.history) }><span>SELL Product</span></button>
+              <button className='custom-btn sell_product btn-3' onClick ={ () => this.props.user_form(this.props.history) }><span>SELL Product</span></button>
             </div>
              
 
