@@ -136,3 +136,77 @@
     color: rgb(155,215,255);
     cursor: pointer;
 }
+
+/* Responsive */
+
+@media(max-width:940px){
+    .product_left_box_1{
+        max-width: 600px;
+        /* margin-left: 30px; */
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    .product_left_box_2{
+        max-width: 600px;
+        /* margin-left: 200px; */
+
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:620px){
+    .product_left_box_1{
+        max-width: 400px;
+     
+    }
+    .product_left_box_2{
+        max-width: 400px;
+
+    }
+}
+
+@media(max-width:420px){
+    .product_left_box_1{
+        max-width: 340px;
+    }
+    .product_left_box_2{
+        max-width: 340px;
+    }
+    .product_right_box_1,.product_right_box_2,.product_right_box_3,.product_right_box_4,.product_right_box_5{
+        max-width: 340px;
+
+    }
+}
+
+@media(max-width:360px){
+    .product_left_box_1{
+        max-width: 310px;
+    }
+    .product_left_box_2{
+        max-width: 310px;
+    }
+    .product_right_box_1,.product_right_box_2,.product_right_box_3,.product_right_box_4,.product_right_box_5{
+        max-width: 310px;
+
+    }
+}
+.product_left_box_2 > p{
+    margin-left: 25px;
+}
+.product_left_box_2 > h3{
+    margin-left: 25px;
+}
+@media(max-width:325px){
+    .product_left_box_1{
+        max-width: 290px;
+    }
+    .product_left_box_2{
+        max-width: 290px;
+    }
+    .product_right_box_1,.product_right_box_2,.product_right_box_3,.product_right_box_4,.product_right_box_5{
+        max-width: 290px;
+        font-size: 12px;
+
+    }
+}

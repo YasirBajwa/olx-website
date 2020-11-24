@@ -15,12 +15,13 @@ class ProductDetail extends React.Component {
     return (
       <div>
         <HomeNavbar />
-        <div className='product__banner'>
-          <img src={BannerImage} alt='' />
-        </div>
+         <div className='product__banner'> 
+           <img src={BannerImage} alt='' />
+        </div> 
 
 
          <div className='product__detail'> 
+
           <div className='product_left_box'>
             <div className='product_left_box_1'>
                   <img src={add_photo} width='300px' alt=''/>
@@ -28,7 +29,7 @@ class ProductDetail extends React.Component {
             <div className='product_left_box_2'>
                 <h1 className='text-center'>Details:</h1>
                 <h3>Descriptions:</h3>
-                 {add_description}
+                <p> {add_description} </p>
             </div>
           </div> 
          
@@ -57,7 +58,6 @@ class ProductDetail extends React.Component {
  
                 </div>
             </div>
-
             <div className='product_right_box_2'>
                 <div className='product__right__box__2__c1'>SELLER DISCRIPTION</div>
                 <div className='product__right__box__2__c2'>
@@ -92,7 +92,6 @@ class ProductDetail extends React.Component {
                     REPORT THIS AD
                 </div>
             </div>
-
             <div className='product_right_box_5'>
                  <img src={GoogleMap} width='100%' height='100%'/>
             </div>

@@ -164,17 +164,26 @@ go_home = (history) =>{
     let user = this.props.users;
     // console.log('state==>',this.state.firebaseData[0])
     return (
-      <form onSubmit={(e) => this.send_sellerData(e)}>
-        <div className='header__wrapper'>
-          <div className='header__wrapper__conetent'>
+     <div>
+
+           <div className='header__wrapper__section__box'> 
+            <div className='header__wrapper__content__'>
             <i className='fa fa-long-arrow-left' style={{cursor:'pointer'}} onClick={() => this.go_home(this.props.history)}></i>
             <h3>OLX</h3>
           </div>
+          </div>
+           <div className='header__wrapper__heading__'>
+             <h4 className='text-center'>POST YOUR AD</h4>
+           </div>
+         
+     <form onSubmit={(e) => this.send_sellerData(e)}>
+        <div className='header__wrapper'>
+         
           <div className='form__section'>
             <div className='form__section__heading'>
-              <h2 className='text-center'>POST YOUR AD</h2>
+             
               <div
-                className='card  mb-3'
+                className='card  mb-3 form__card__content'
                 style={{ margin: '0 auto', maxWidth: '60%', height: '1500px' }}
               >
                 <div className='card-header bg-transparent '>
@@ -253,7 +262,7 @@ go_home = (history) =>{
                   </div>
                   <div className='card__content__9'>
                     <p>Add Phone Number</p>
-                    <input value={this.state.set_phoneNumber} required type='number'  onChange= { (e) => this.set_phoneNumber(e)}/>
+                    <input placeholder='Enter Your Phone Number' value={this.state.set_phoneNumber} required type='number'  onChange= { (e) => this.set_phoneNumber(e)}/>
                   </div>
                 </div>
                 <div className='card-footer bg-transparent '>
@@ -266,6 +275,7 @@ go_home = (history) =>{
           </div>
         </div>
       </form>
+      </div>
     );
   }
 }

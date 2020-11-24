@@ -6,7 +6,6 @@ const facebook_login = (history) => {
         var provider = new firebase.auth.FacebookAuthProvider();
         firebase.auth().signInWithPopup(provider)
         .then(function(result) {
-            var token = result.credential.accessToken;
             var user = result.user;
             let create_user ={
                 name : user.displayName,
@@ -27,11 +26,10 @@ const facebook_login = (history) => {
         
 
           }).catch(function(error) {
-            var errorCode = error.code;
+          
             var errorMessage = error.message;
             console.log('error',errorMessage)
-            var email = error.email;
-            var credential = error.credential;
+           
           });
     }
 }
