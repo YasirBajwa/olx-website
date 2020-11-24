@@ -17,3 +17,16 @@
     
     border: 5px solid black
 }
+
+@media(max-width:400px){
+    .modal__dialog{
+         width: 80%;
+         margin: 0 auto;
+    }
+    .modal__body__fb__btn > button{
+        width: 220px;
+        font-size: 13px;
+       
+    }
+    
+}

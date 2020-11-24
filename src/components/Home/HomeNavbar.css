@@ -554,3 +554,31 @@
         margin-left: 0px;
     }
 }
+
+
+/* sell product button */
+
+@media(max-width:630px){
+    .sell_product{
+        position: absolute;
+        left: 200px;
+    }
+    .dropdown-menu-right{
+        position: absolute !important;
+        left: -110px !important;
+        /* position: relative !important; */
+        /* left: -110px !important; */
+    }
+}
+
+@media(max-width:330px){
+    .sell_product{
+        position: absolute;
+        left: 160px;
+    }
+    .dropdown-menu-right{
+        max-width: 260px;
+        height: 580px;
+    }
+}
+
