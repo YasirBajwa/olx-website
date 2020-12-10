@@ -2,13 +2,11 @@ import React from 'react';
 import './dashboard.css';
 import { connect } from 'react-redux';
 import firebase from '../../config/firebase'
-import { HourglassEmpty } from '@material-ui/icons';
 
 class Dashbaord extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      test :'Hello....',
       firebaseData : null,
       photo_url : null,
       file: null,

@@ -52,7 +52,7 @@ class HomeNavbar extends React.Component {
 
 
          <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" >
             <img src={Logo} alt='olx-logo'  onClick={() => this.go_home(this.props.history)} width='80' />
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
